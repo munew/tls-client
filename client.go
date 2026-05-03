@@ -547,8 +547,16 @@ func (c *httpClient) do(req *http.Request) (*http.Response, error) {
 	// Header order must be defined in all lowercase. On HTTP 1 people sometimes define them also in uppercase and then ordering does not work.
 	c.headerLck.Lock()
 
-	if len(req.Header) == 0 {
-		req.Header = c.config.defaultHeaders.Clone()
+	// add every headers from client opts default headers to the request if not present
+	for k, v := range c.config.defaultHeaders {
+		if len(v) <= 0 {
+			continue
+		}
+
+		ck := http.CanonicalHeaderKey(k)
+		if _, ok := req.Header[ck]; !ok {
+			req.Header.Set(k, v[0])
+		}
 	}
 
 	req.Header[http.HeaderOrderKey] = allToLower(req.Header[http.HeaderOrderKey])
