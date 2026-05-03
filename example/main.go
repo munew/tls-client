@@ -14,6 +14,7 @@ import (
 	"github.com/bogdanfinn/tls-client/profiles"
 
 	http "github.com/bogdanfinn/fhttp"
+	"github.com/bogdanfinn/fhttp/cookiejar"
 	"github.com/bogdanfinn/fhttp/http2"
 	tls_client "github.com/bogdanfinn/tls-client"
 	tls "github.com/bogdanfinn/utls"
@@ -151,7 +152,7 @@ type TlsApiResponse struct {
 }
 
 func sslPinning() {
-	jar := tls_client.NewCookieJar()
+	jar, _ := cookiejar.New(nil)
 
 	//	I generated the pins by running the following command:
 	//	➜ hpkp-pins -server=bstn.com:443
@@ -224,7 +225,7 @@ func sslPinning() {
 }
 
 func requestToppsAsChrome107Client() {
-	jar := tls_client.NewCookieJar()
+	jar, _ := cookiejar.New(nil)
 
 	options := []tls_client.HttpClientOption{
 		tls_client.WithTimeoutSeconds(30),

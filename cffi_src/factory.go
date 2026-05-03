@@ -393,18 +393,8 @@ func getTlsClient(requestInput RequestInput, sessionId string, withSession bool)
 	}
 
 	if !requestInput.WithoutCookieJar {
-		var jarOptions []tls_client.CookieJarOption
-		if requestInput.WithDebug {
-			jarOptions = append(jarOptions, tls_client.WithDebugLogger())
-		}
-
 		jar, _ := cookiejar.New(nil)
-		if requestInput.WithCustomCookieJar {
-			jar := tls_client.NewCookieJar(jarOptions...)
-			options = append(options, tls_client.WithCookieJar(jar))
-		} else {
-			options = append(options, tls_client.WithCookieJar(jar))
-		}
+		options = append(options, tls_client.WithCookieJar(jar))
 	}
 
 	if !requestInput.FollowRedirects {

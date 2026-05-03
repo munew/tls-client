@@ -12,6 +12,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/bogdanfinn/fhttp/cookiejar"
+
 	http "github.com/bogdanfinn/fhttp"
 	"github.com/bogdanfinn/fhttp/httputil"
 	"github.com/bogdanfinn/tls-client/bandwidth"
@@ -81,8 +83,7 @@ var DefaultOptions = []HttpClientOption{
 }
 
 func ProvideDefaultClient(logger Logger) (HttpClient, error) {
-	jar := NewCookieJar()
-
+	jar, _ := cookiejar.New(nil)
 	return NewHttpClient(logger, append(DefaultOptions, WithCookieJar(jar))...)
 }
 
