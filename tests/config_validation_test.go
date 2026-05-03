@@ -7,8 +7,8 @@ import (
 	"time"
 
 	http "github.com/bogdanfinn/fhttp"
-	tls_client "github.com/bogdanfinn/tls-client"
-	"github.com/bogdanfinn/tls-client/profiles"
+	tls_client "github.com/munew/tls-client"
+	"github.com/munew/tls-client/profiles"
 	"golang.org/x/net/proxy"
 )
 

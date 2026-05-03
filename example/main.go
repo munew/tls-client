@@ -11,12 +11,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bogdanfinn/tls-client/profiles"
+	"github.com/munew/tls-client/profiles"
 
 	http "github.com/bogdanfinn/fhttp"
 	"github.com/bogdanfinn/fhttp/cookiejar"
 	"github.com/bogdanfinn/fhttp/http2"
-	tls_client "github.com/bogdanfinn/tls-client"
+	tls_client "github.com/munew/tls-client"
 	tls "github.com/bogdanfinn/utls"
 )
 
