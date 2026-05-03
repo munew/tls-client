@@ -9,12 +9,12 @@ import (
 	"sync"
 	"time"
 
-	http "github.com/bogdanfinn/fhttp"
-	"github.com/bogdanfinn/fhttp/http2"
-	"github.com/bogdanfinn/quic-go-utls/http3"
+	tls "github.com/bogdanfinn/utls"
 	"github.com/munew/tls-client/bandwidth"
 	"github.com/munew/tls-client/profiles"
-	tls "github.com/bogdanfinn/utls"
+	http "github.com/munew/tlsclient-fhttp"
+	"github.com/munew/tlsclient-fhttp/http2"
+	"github.com/munew/tlsclient-quic-go/http3"
 	"golang.org/x/net/proxy"
 )
 

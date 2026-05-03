@@ -75,7 +75,7 @@ import (
 	"io"
 	"log"
 
-	http "github.com/bogdanfinn/fhttp"
+	http "github.com/munew/tlsclient-fhttp"
 	tls_client "github.com/munew/tls-client"
 	"github.com/munew/tls-client/profiles"
 )

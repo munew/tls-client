@@ -1,11 +1,10 @@
 package profiles
 
 import (
-	"github.com/bogdanfinn/fhttp/http2"
 	tls "github.com/bogdanfinn/utls"
 	"github.com/bogdanfinn/utls/dicttls"
+	"github.com/munew/tlsclient-fhttp/http2"
 )
-
 
 var Firefox_148 = ClientProfile{
 	clientHelloId: tls.ClientHelloID{

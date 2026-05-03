@@ -7,9 +7,9 @@ import (
 	"sync/atomic"
 	"testing"
 
-	http "github.com/bogdanfinn/fhttp"
 	tls_client "github.com/munew/tls-client"
 	"github.com/munew/tls-client/profiles"
+	http "github.com/munew/tlsclient-fhttp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

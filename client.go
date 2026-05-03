@@ -12,12 +12,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bogdanfinn/fhttp/cookiejar"
+	"github.com/munew/tlsclient-fhttp/cookiejar"
 
-	http "github.com/bogdanfinn/fhttp"
-	"github.com/bogdanfinn/fhttp/httputil"
 	"github.com/munew/tls-client/bandwidth"
 	"github.com/munew/tls-client/profiles"
+	http "github.com/munew/tlsclient-fhttp"
+	"github.com/munew/tlsclient-fhttp/httputil"
 	"golang.org/x/net/html/charset"
 	"golang.org/x/net/proxy"
 )

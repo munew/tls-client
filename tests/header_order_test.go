@@ -8,8 +8,8 @@ import (
 
 	"github.com/munew/tls-client/profiles"
 
-	http "github.com/bogdanfinn/fhttp"
 	tls_client "github.com/munew/tls-client"
+	http "github.com/munew/tlsclient-fhttp"
 	"github.com/stretchr/testify/assert"
 )
 

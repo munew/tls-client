@@ -13,11 +13,11 @@ import (
 
 	"github.com/munew/tls-client/profiles"
 
-	http "github.com/bogdanfinn/fhttp"
-	"github.com/bogdanfinn/fhttp/cookiejar"
-	"github.com/bogdanfinn/fhttp/http2"
-	tls_client "github.com/munew/tls-client"
 	tls "github.com/bogdanfinn/utls"
+	tls_client "github.com/munew/tls-client"
+	http "github.com/munew/tlsclient-fhttp"
+	"github.com/munew/tlsclient-fhttp/cookiejar"
+	"github.com/munew/tlsclient-fhttp/http2"
 )
 
 func main() {

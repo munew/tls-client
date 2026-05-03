@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	http "github.com/bogdanfinn/fhttp"
 	tls_client "github.com/munew/tls-client"
 	"github.com/munew/tls-client/profiles"
+	http "github.com/munew/tlsclient-fhttp"
 	"golang.org/x/net/proxy"
 )
 

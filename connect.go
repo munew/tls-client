@@ -7,9 +7,6 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	_ "github.com/bdandy/go-socks4" // due to that proxy.FromURL() does support socks4
-	http "github.com/bogdanfinn/fhttp"
-	"golang.org/x/net/proxy"
 	"io"
 	"net"
 	"net/url"
@@ -17,7 +14,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bogdanfinn/fhttp/http2"
+	_ "github.com/bdandy/go-socks4" // due to that proxy.FromURL() does support socks4
+	http "github.com/munew/tlsclient-fhttp"
+	"golang.org/x/net/proxy"
+
+	"github.com/munew/tlsclient-fhttp/http2"
 )
 
 type directDialer struct {

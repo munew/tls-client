@@ -4,9 +4,9 @@ import (
 	"io"
 	"testing"
 
-	http "github.com/bogdanfinn/fhttp"
 	tls_client "github.com/munew/tls-client"
 	"github.com/munew/tls-client/profiles"
+	http "github.com/munew/tlsclient-fhttp"
 )
 
 func TestHTTP3DirectPathChrome(t *testing.T) {

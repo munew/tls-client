@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
-	http "github.com/bogdanfinn/fhttp"
 	tls_client "github.com/munew/tls-client"
 	"github.com/munew/tls-client/profiles"
+	http "github.com/munew/tlsclient-fhttp"
 )
 
 func TestHTTP3WithChromeOnCloudflare(t *testing.T) {

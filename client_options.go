@@ -9,8 +9,8 @@ import (
 	"net"
 	"time"
 
-	http "github.com/bogdanfinn/fhttp"
 	"github.com/munew/tls-client/profiles"
+	http "github.com/munew/tlsclient-fhttp"
 	"golang.org/x/net/proxy"
 )
 
