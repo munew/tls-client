@@ -7,7 +7,7 @@ require (
 	github.com/bogdanfinn/utls v1.7.7-barnius
 	github.com/google/uuid v1.6.0
 	github.com/munew/tlsclient-fhttp v0.0.0-20260503172852-2dfa404dd28d
-	github.com/munew/tlsclient-quic-go v0.0.0-20260503173811-487b1926db8d
+	github.com/munew/tlsclient-quic-go v0.0.0-20260503175620-4f2dbbf2e5ed
 	github.com/stretchr/testify v1.11.1
 	github.com/tam7t/hpkp v0.0.0-20160821193359-2b70b4024ed5
 	golang.org/x/net v0.48.0

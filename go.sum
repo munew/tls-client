@@ -22,6 +22,8 @@ github.com/munew/tlsclient-fhttp v0.0.0-20260503172852-2dfa404dd28d h1:AcGHOPkrw
 github.com/munew/tlsclient-fhttp v0.0.0-20260503172852-2dfa404dd28d/go.mod h1:b8SWAriKBgmvpF3noEid0/BSO7740ZazPaNpaxLazU4=
 github.com/munew/tlsclient-quic-go v0.0.0-20260503173811-487b1926db8d h1:qV1GikjO4g/fMg6tjeTii4kUFv0jQfD2DvDAflWadQo=
 github.com/munew/tlsclient-quic-go v0.0.0-20260503173811-487b1926db8d/go.mod h1:1hACxXv3P3w77gPBVKrrW+aYpdpaUBP+3uR/TUZGaP0=
+github.com/munew/tlsclient-quic-go v0.0.0-20260503175620-4f2dbbf2e5ed h1:NQ+FJD18z+G0LgrRdiAn6XRcoLeW7Jfpf7/OjKKl2Fw=
+github.com/munew/tlsclient-quic-go v0.0.0-20260503175620-4f2dbbf2e5ed/go.mod h1:PVFEaQGWrP2WcJ7eNR2cSpXh+C8lbWhRGQJmp5thOVg=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/quic-go/qpack v0.6.0 h1:g7W+BMYynC1LbYLSqRt8PBg5Tgwxn214ZZR34VIOjz8=
